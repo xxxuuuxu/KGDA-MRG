@@ -1,0 +1,3 @@
+#!/bin/bash
+export CUDA_VISIBLE_DEVICES=0
+python main.py --batch_size 1 --image_size 300 --vocab_size 760 --theta 0.4 --gamma 0.4 --beta 1.0 --delta 0.001 --dataset_name iu_xray --anno_path /root/autodl-tmp/KGDA-MRG/data/iu_xray/annotation.json --data_dir /root/autodl-tmp/KGDA-MRG/data/iu_xray/images300 --mode test --knowledge_prompt_path /root/autodl-tmp/KGDA-MRG/knowledge_path/knowledge_prompt_iu.pkl --test_path /root/autodl-tmp/KGDA-MRG/iu_xray_best_model.pt

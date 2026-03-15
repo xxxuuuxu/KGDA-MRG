@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+export CUDA_VISIBLE_DEVICES=0
+python main.py --epochs 20 --lr_backbone 1e-5 --lr 1e-4 --batch_size 16 --image_size 300 --vocab_size 4253 --theta 0.4 --gamma 0.4 --beta 1.0 --delta 0.01 --align_w 0.01 --dataset_name mimic_cxr --t_model_weight_path ./weight_path/mimic_t_model.pth --anno_path /root/autodl-tmp/KGDA-MRG/data/mimic_cxr/mimic_annotation.json --data_dir /root/autodl-tmp/KGDA-MRG/data/mimic_cxr/images300 --mode train

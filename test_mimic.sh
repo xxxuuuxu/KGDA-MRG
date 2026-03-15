@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+export CUDA_VISIBLE_DEVICES=0
+python main.py --batch_size 1 --image_size 300 --vocab_size 4253 --theta 0.4 --gamma 0.4 --beta 1.0 --delta 0.01 --dataset_name mimic_cxr --anno_path /root/autodl-tmp/KGDA-MRG/data/mimic_cxr/mimic_annotation.json --data_dir /root/autodl-tmp/KGDA-MRG/data/images300 --mode test --knowledge_prompt_path ./knowledge_path/knowledge_prompt_mimic.pkl --test_path /root/autodl-tmp/KGDA-MRG/mimic_cxr_best_model.pt
