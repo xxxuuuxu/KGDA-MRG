@@ -28,7 +28,6 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 # Install other requirements
 pip install -r requirements.txt
 ```
-*(Note: Ensure you have installed the correct version of `causal-conv1d` and `mamba-ssm` if your KDDA module requires them.)*
 
 ## 🗂️ Data Preparation
 
