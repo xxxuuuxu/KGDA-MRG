@@ -15,5 +15,4 @@ python main.py \
     --beta 1.0 \
     --delta 0.02 \
     --align_w 0.01 \
-    --t_model_weight_path "" \
     --mode train
